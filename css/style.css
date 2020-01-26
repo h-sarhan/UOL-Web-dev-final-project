@@ -1,0 +1,522 @@
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Cousine Font */
+@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
+/* Lobster Font */
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+* {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 1.5rem;
+}
+
+/* Photo by Dawid Zawiła on Unsplash */
+.carousel {
+  background         : url('../images/dawid-zawila-zb2vBaHYB2I-unsplash.jpg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  height             : 60vh;
+
+}
+
+.navbar {
+  padding   : 0.2rem;
+  background: #EDED1B;
+}
+
+.navbar__links {
+  display        : flex;
+  justify-content: space-evenly;
+  padding        : 0;
+  align-items    : center;
+
+}
+
+.navbar__link {
+  background     : radial-gradient(circle, rgba(253, 187, 45, 1) 0%, rgb(222, 126, 15) 100%);
+  padding        : 1rem;
+  width          : 300px;
+  border         : white 2px solid;
+  text-align     : center;
+  cursor         : pointer;
+  text-decoration: none;
+  color          : black;
+  border-radius  : 50px;
+  margin         : 0.5rem;
+  transition     : all 0.1s ease-in;
+}
+
+.navbar__link:hover {
+  transform: scale(1.1);
+}
+
+.navbar__link i {
+  font-size: 1.5rem;
+}
+
+
+.info {
+  padding         : 0;
+  height          : 75vh;
+  display         : flex;
+  background-color: #EDED1B;
+
+}
+
+.info-left {
+  flex           : 0.4;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+}
+
+.info__logo {
+  width: 100%;
+}
+
+.info__icons {
+  padding        : 1rem;
+  display        : flex;
+  justify-content: space-evenly;
+  font-size      : 3rem;
+  cursor         : pointer;
+}
+
+
+.info-right {
+  flex                 : 0.6;
+  height               : 100%;
+  background           : rgba(0, 0, 0, 0.2) url('../images/82687168_1006968263021574_2332176493087555584_o.jpg');
+  background-position  : center;
+  background-size      : cover;
+  background-repeat    : no-repeat;
+  background-blend-mode: overlay;
+  position             : relative;
+}
+
+.info-right__caption {
+  position     : absolute;
+  bottom       : 0;
+  left         : 0;
+  margin       : 0.5rem;
+  background   : #00000088;
+  padding      : 2rem;
+  border-radius: 40px;
+  color        : white;
+}
+
+
+.newsletter-cta {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  height         : 25vh;
+  justify-content: space-evenly;
+  border-radius  : 20px;
+  background     : linear-gradient(to bottom, #141e30, #243b55);
+
+}
+
+.newsletter-cta__form {
+  width  : 60%;
+  display: flex;
+}
+
+.newsletter-cta__title {
+  color         : white;
+  letter-spacing: 0.1rem;
+}
+
+.newsletter-cta__email {
+  border                    : none;
+  flex                      : 0.8;
+  padding                   : 1rem;
+  text-align                : center;
+  border-radius             : 20px;
+  font-size                 : 1.5rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius   : 0;
+}
+
+.newsletter-cta__btn {
+  border                   : none;
+  flex                     : 0.2;
+  padding                  : 1rem;
+  border-radius            : 1rem;
+  border-top-left-radius   : 0;
+  border-bottom-left-radius: 0;
+  cursor                   : pointer;
+  font-size                : 1.5rem;
+  background               : radial-gradient(circle, rgba(253, 187, 45, 1) 0%, rgb(222, 126, 15) 100%);
+}
+
+
+
+.news-header,
+.meet-the-team-header {
+  display        : flex;
+  justify-content: center;
+  background     : #EDED1B
+}
+
+.news-header h1,
+.meet-the-team-header h1 {
+  border-bottom: 5px black dashed;
+  border-top   : 5px black dashed;
+  padding      : 1rem;
+  margin       : 1rem;
+  width        : 100%;
+  text-align   : center;
+}
+
+/* Photo by Robina Weermeijer on Unsplash */
+.summary-1 {
+  background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
+}
+
+/* Photo by David Marcu on Unsplash */
+.summary-2 {
+  background: rgba(0, 0, 0, 0.2) url('../images/david-marcu-8TJbrQGKFyU-unsplash.jpg');
+}
+
+
+.summary {
+  background-position  : center;
+  background-size      : cover;
+  background-blend-mode: overlay;
+  background-repeat    : no-repeat;
+  display              : flex;
+  flex-direction       : column;
+  justify-content      : space-evenly;
+  align-items          : center;
+  text-align           : center;
+  height               : 70vh;
+}
+
+.summary-heading {
+  color: white;
+}
+
+.summary-paragraph {
+  width        : 40%;
+  background   : #3a3a3aaf;
+  color        : white;
+  line-height  : 2rem;
+  border-radius: 2rem;
+  padding      : 1rem;
+}
+
+.summary-btn {
+  text-decoration: none;
+  background     : rgb(222, 91, 15);
+  border-radius  : 40px;
+  color          : black;
+  font-weight    : 100;
+  cursor         : pointer;
+  padding        : 1rem;
+}
+
+.events-header {
+  /* Photo by Maddi Bazzocco on Unsplash */
+  background           : rgba(0, 0, 0, 0.3) url('../images/maddi-bazzocco-waNAJOI7Jz8-unsplash.jpg');
+  background-blend-mode: overlay;
+  background-position  : center;
+  background-size      : cover;
+  background-repeat    : none;
+  height               : 80vh;
+  display              : flex;
+  flex-direction       : column;
+  justify-content      : center;
+}
+
+.events-header__text {
+  color     : white;
+  font-size : 5rem;
+  text-align: center;
+}
+
+
+
+.events-container {
+  display         : flex;
+  justify-content : space-evenly;
+  flex-wrap       : wrap;
+  padding         : 5rem;
+  background-color: #c8d6e5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.events-card {
+  display           : flex;
+  flex-direction    : column;
+  margin-bottom     : 2rem;
+  height            : 40vh;
+  max-width         : 400px;
+  /* border         : 3px solid #2980b9; */
+  border            : 3px solid white;
+  border-radius     : 19px;
+  justify-content   : flex-end;
+  transition        : all 0.3s ease-in;
+}
+
+.yoga {
+  background         : url('./../images/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.yoga:hover {
+  background: rgba(0, 0, 0, 0.4) url("./../images/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg");
+}
+
+.parent-support-group {
+  background         : url('./../images/john-mark-smith-9QTQFihyles-unsplash.jpg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.parent-support-group:hover {
+  background: rgba(0, 0, 0, 0.4) url('./../images/john-mark-smith-9QTQFihyles-unsplash.jpg');
+}
+
+.anxiety-movie-night {
+  background         : url('../images/alex-munsell-GT6JIOvB3Ks-unsplash.jpg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.anxiety-movie-night:hover {
+  background: rgba(0, 0, 0, 0.4) url('../images/alex-munsell-GT6JIOvB3Ks-unsplash.jpg');
+}
+
+.walk-n-talk {
+  background         : url('../images/kolar-io-c8Ryxp2N3Gw-unsplash.jpg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.walk-n-talk:hover {
+  background: rgba(0, 0, 0, 0.4) url('../images/kolar-io-c8Ryxp2N3Gw-unsplash.jpg');
+}
+
+.events-card:hover {
+  background-blend-mode: overlay;
+  background-position  : center;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+}
+
+.events-card__img {
+  max-width    : 200px;
+  border-radius: 19px;
+}
+
+
+.events-card__text {
+  text-align        : center;
+  display           : flex;
+  flex-direction    : column;
+  align-items       : center;
+  color             : white;
+  visibility        : hidden;
+  margin-top        : 2rem;
+  justify-content   : flex-end;
+  transition        : all 0.2s ease-in;
+  /* transform      : translateY(-40px); */
+}
+
+
+
+.events-card__title {
+  font-size: 1rem;
+  padding  : 0.2rem;
+}
+
+.events-card__caption {
+  font-size: 0.8rem;
+  padding  : 0.8rem;
+}
+
+
+.events-card__btn:link,
+.events-card__btn:active,
+.events-card__btn {
+  color          : white;
+  text-decoration: none;
+  border         : 2px solid #2ecc71;
+  border-radius  : 10px;
+  padding        : 0.8rem;
+  margin-bottom  : 0.8rem;
+}
+
+.events-card__btn:hover {
+  background: #2ecc71;
+}
+
+.who-we-are-what-we-do {
+  display: flex;
+  height : 50vh;
+}
+
+.what-we-do {
+  text-align     : center;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-evenly;
+  align-items    : center;
+  color          : white;
+  background     : linear-gradient(to left, #f0f2f0, #000c40 70%);
+}
+
+
+.what-we-do__paragraph,
+.who-we-are__paragraph {
+  width     : 60%;
+  text-align: center;
+}
+
+
+.who-we-are {
+  text-align     : center;
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-evenly;
+  background     : linear-gradient(to right, #f0f2f0, #FFD200);
+}
+
+
+.profiles {
+  display       : flex;
+  flex-direction: column;
+}
+
+.profile {
+  display            : flex;
+  padding            : 1rem;
+  padding-bottom     : 5rem;
+  justify-content    : space-evenly;
+  /* background-color: #fad390; */
+  background-color   : #fad390;
+  background-image   : url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.54'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.profile__image1 {
+  background: url('../images/makson-serpa-khIbyobZl_0-unsplash.jpg');
+}
+
+.profile__image2 {
+  background: url('../images/jayson-hinrichsen-cw92WXzhrmE-unsplash.jpg');
+}
+
+.profile__image1,
+.profile__image2 {
+  background-size          : cover;
+  background-position      : center;
+  background-repeat        : no-repeat;
+  /* flex                  : 0.4; */
+  border-radius            : 120px;
+  padding                  : 8rem;
+  box-shadow               : 0px 44px 55px -10px rgba(0, 0, 0, 0.75);
+
+}
+
+.profile__text {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-evenly;
+  width          : 50%;
+}
+
+.profile__paragraph {
+  background   : #fddda5d8;
+  border-radius: 30px;
+  padding      : 2rem;
+}
+
+.profile__title {
+  font-family  : 'Lobster Two', cursive;
+  font-size    : 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-1-header {
+  background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
+}
+
+
+.article-2-header {
+  background: rgba(0, 0, 0, 0.3) url('../images/atleten-fitness-hardloopschoenen-loopschoenen-2526878.jpg');
+
+}
+
+.article-1-header,
+.article-2-header {
+  background-position  : center;
+  background-size      : cover;
+  background-blend-mode: overlay;
+  background-repeat    : no-repeat;
+  display              : flex;
+  justify-content      : space-around;
+  align-items          : center;
+  text-align           : center;
+  height               : 70vh;
+}
+
+.article-1-header__title,
+.article-2-header__title {
+  font-size     : 4rem;
+  font-family   : 'Cousine', monospace;
+  letter-spacing: 2rem;
+  color         : white;
+}
+
+.article-1-header__profile,
+.article-2-header__profile {
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-end;
+  align-items    : flex-start;
+  height         : 100%;
+}
+
+
+.article-1-header__face {
+  background: url('../images/makson-serpa-khIbyobZl_0-unsplash.jpg');
+}
+
+.article-2-header__face {
+  background: url('../images/jayson-hinrichsen-cw92WXzhrmE-unsplash.jpg');
+}
+
+.article-1-header__face,
+.article-2-header__face {
+  background-size    : cover;
+  background-position: center;
+  background-repeat  : no-repeat;
+  border-radius      : 150px;
+  height             : 9rem;
+  width              : 9rem;
+  box-shadow         : 0px 44px 55px -10px rgba(0, 0, 0, 0.75);
+  margin             : 1.5rem;
+}
+
+.article-1-header__name,
+.article-2-header__name {
+  font-family: 'Cousine', monospace;
+  color      : white;
+  font-size  : 1.5rem;
+  margin     : 1rem;
+}
