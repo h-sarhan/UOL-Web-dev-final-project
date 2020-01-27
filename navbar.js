@@ -1,26 +1,13 @@
 var navbarLinks = document.querySelectorAll('.navbar__link');
-var colors = [
-  '#ff9ff3',
-  '#ee5253',
-  '#48dbfb',
-  '#1dd1a1',
-  '#00d2d3',
-  '#2e86de',
-  '#5f27cd',
-  '#8395a7',
-  '#222f3e',
-];
-var defaultBackground =
-  'radial-gradient(circle, rgba(253, 187, 45, 1) 0%, rgb(222, 126, 15) 100%)';
+var colors = ['#2980b9', '#2ecc71', '#d35400'];
 
-navbarLinks.forEach(link => {
-  link.addEventListener('mouseover', () => {
-    var r = Math.floor(Math.random() * colors.length);
-    link.style.background = colors[r];
+var defaultBackground = '';
+navbarLinks.forEach((link, idx) => {
+  link.addEventListener('mouseenter', () => {
+    link.style.background = colors[idx];
   });
-  link.addEventListener('mouseout', () => {
+
+  link.addEventListener('mouseleave', () => {
     link.style.background = defaultBackground;
   });
 });
-
-// console.log(navbarLinks);
