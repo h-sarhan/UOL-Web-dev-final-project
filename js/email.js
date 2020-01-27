@@ -8,6 +8,18 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+email.addEventListener('input', function(e) {
+  var target = e.target;
+  var length = target.value.length;
+  if (length >= 20) {
+    target.style.fontSize = '1rem';
+  } else if (length >= 10) {
+    target.style.fontSize = '1.2rem';
+  } else {
+    target.style.fontSize = '1.5rem';
+  }
+});
+
 button.addEventListener('click', e => {
   e.preventDefault();
   if (!validateEmail(email.value)) {
