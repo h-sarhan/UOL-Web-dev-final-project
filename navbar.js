@@ -1,7 +1,6 @@
 var navbarLinks = document.querySelectorAll('.navbar__link');
 var colors = [
   '#ff9ff3',
-  '#feca57',
   '#ee5253',
   '#48dbfb',
   '#1dd1a1',

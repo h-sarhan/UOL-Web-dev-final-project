@@ -50,12 +50,15 @@ body {
   text-decoration: none;
   color          : black;
   border-radius  : 50px;
-  margin         : 0.5rem;
-  transition     : transform 0.1s ease-in;
+  margin         : 1rem;
+  transition     : all 0.1s ease-in;
+  box-shadow     : 10px 10px 20px -7px rgba(0, 0, 0, 0.75);
+
 }
 
 .navbar__link:hover {
-  transform: translateX(20px) translateY(-8px);
+  transform : translateX(20px) translateY(-8px);
+  box-shadow: 10px 8px 20px -7px rgba(0, 0, 0, 0.75);
 }
 
 .navbar__link i {
