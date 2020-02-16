@@ -19,6 +19,8 @@ body {
   padding: 1.5rem;
 }
 
+
+
 /* Photo by Dawid Zawiła on Unsplash */
 .header-image {
   background         : url('../images/dawid-zawila-zb2vBaHYB2I-unsplash.jpg');
@@ -70,6 +72,8 @@ body {
 .navbar__link i {
   font-size: 1.5rem;
 }
+
+
 
 
 .info {
@@ -300,6 +304,8 @@ body {
   color     : black;
 }
 
+
+
 .events-header {
   /* Photo by Maddi Bazzocco on Unsplash */
   background           : rgba(0, 0, 0, 0.4) url('../images/maddi-bazzocco-waNAJOI7Jz8-unsplash.jpg');
@@ -437,6 +443,10 @@ body {
   display: none;
 }
 
+
+
+
+
 .who-we-are-what-we-do {
   display: flex;
   height : 50vh;
@@ -487,14 +497,16 @@ body {
   flex-direction: column;
 }
 
+
+
 .profile {
-  display            : flex;
-  padding            : 1rem;
-  padding-bottom     : 5rem;
-  justify-content    : space-evenly;
-  /* background-color: #fad390; */
-  background-color   : #fad390;
-  background-image   : url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.54'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display        : flex;
+  padding        : 1rem;
+  padding-bottom : 5rem;
+  justify-content: space-evenly;
+
+  background-color: #fad390;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.54'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .profile__image1 {
@@ -507,13 +519,12 @@ body {
 
 .profile__image1,
 .profile__image2 {
-  background-size          : cover;
-  background-position      : center;
-  background-repeat        : no-repeat;
-  /* flex                  : 0.4; */
-  border-radius            : 120px;
-  padding                  : 8rem;
-  box-shadow               : 0px 44px 55px -10px rgba(0, 0, 0, 0.75);
+  background-size    : cover;
+  background-position: center;
+  background-repeat  : no-repeat;
+  border-radius      : 120px;
+  padding            : 8rem;
+  box-shadow         : 0px 44px 55px -10px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -535,6 +546,7 @@ body {
   font-size    : 2.5rem;
   margin-bottom: 1rem;
 }
+
 
 .article-1-header {
   background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
@@ -603,4 +615,139 @@ body {
   color      : white;
   font-size  : 1.5rem;
   margin     : 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .header-image {
+    background-position: left;
+  }
+
+  .navbar {
+    margin   : 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .navbar__link i {
+    font-size: 2rem;
+  }
+
+  .info {
+    flex-direction: column;
+    height        : 140vh;
+  }
+
+  .info-left {
+    flex: 0.4;
+  }
+
+  .info-right {
+    flex: 0.6;
+  }
+
+  .newsletter-cta {
+    padding: 0.5rem;
+    margin : 0.5rem;
+  }
+
+  .newsletter-cta__form {
+    width: 100%;
+  }
+
+  .newsletter-cta__email,
+  .newsletter-cta__btn--joined {
+    font-size: 1rem;
+    padding  : 0.5rem;
+  }
+
+  .summary-paragraph {
+    display: none;
+  }
+
+  .events-header__text {
+    font-size: 3.5rem;
+  }
+
+  .events-container {
+    padding: 2rem;
+  }
+
+  .who-we-are-what-we-do {
+    display       : flex;
+    height        : 130vh;
+    flex-direction: column;
+  }
+
+  .what-we-do {
+    flex                      : 1;
+    border-radius             : 80px;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius: 0;
+    margin-bottom             : 0;
+    background                : linear-gradient(to top, #f0f2f0, #000c40 70%);
+
+  }
+
+  .who-we-are {
+    flex                   : 1;
+    border-radius          : 80px;
+    border-top-left-radius : 0;
+    border-top-right-radius: 0;
+    margin-top             : 0;
+    background             : linear-gradient(to bottom, #f0f2f0, #FFD200);
+
+  }
+
+  .profile {
+
+    flex-direction: column;
+    align-items   : center;
+    text-align    : center;
+    padding       : 2rem;
+  }
+
+
+
+  .profile__image1,
+  .profile__image2 {
+    padding: 6rem;
+  }
+
+  .profile__text {
+
+    width: 100%;
+  }
+
+  .profile__paragraph {
+    padding: 1rem;
+  }
+
+  .profile__title {
+    margin: 1rem;
+  }
+
+  .article-1-header,
+  .article-2-header {
+    flex-direction: column;
+
+  }
+
+  .article-1-header__title,
+  .article-2-header__title {
+    letter-spacing : 1rem;
+    font-size      : 2rem;
+    flex           : 1;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+  }
+
+  .article-1-header__profile,
+  .article-2-header__profile {
+
+    flex: 1;
+  }
 }

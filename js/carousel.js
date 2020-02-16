@@ -31,12 +31,10 @@ switchBackground();
 
 leftBtn.addEventListener('click', function() {
   currentImage = mod(currentImage - 1, images.length);
-  console.log(currentImage);
   switchBackground();
 });
 
 rightBtn.addEventListener('click', function() {
   currentImage = mod(currentImage + 1, images.length);
-  console.log(currentImage);
   switchBackground();
 });
