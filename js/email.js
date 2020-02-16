@@ -23,6 +23,7 @@ email.addEventListener('input', function(e) {
 button.addEventListener('click', e => {
   e.preventDefault();
   if (!validateEmail(email.value)) {
+    email.value = '';
     email.setAttribute('placeholder', 'Please enter a valid email address.');
   } else if (button.classList.contains('newsletter-cta__btn')) {
     email.classList.add('newsletter-cta__email--joined');

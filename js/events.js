@@ -34,7 +34,7 @@ function acceptHandler(index) {
   eventCards[index].style.background = '#2ecc71';
   registrationForms[index].classList.add('hidden');
   eventCards[index].children[0].innerHTML =
-    '<div class="registration-message">We look forward to meeting you.😄 Please check your email 📧</div>';
+    '<div class="registration-message">We look forward to meeting you.😄 Please check your email.</div>';
 }
 
 function rejectHandler(index) {

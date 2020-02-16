@@ -127,23 +127,45 @@ body {
 .info-right {
   flex                 : 0.6;
   height               : 100%;
-  background           : rgba(0, 0, 0, 0.2) url('../images/82687168_1006968263021574_2332176493087555584_o.jpg');
+  background           : url('../images/82687168_1006968263021574_2332176493087555584_o.jpg');
   background-position  : center;
   background-size      : cover;
   background-repeat    : no-repeat;
   background-blend-mode: overlay;
-  position             : relative;
 }
 
+.info-right__overlay {
+  display       : flex;
+  flex-direction: column;
+  height        : 100%;
+}
+
+.info-right__btns {
+  font-size      : 3rem;
+  color          : rgba(0, 0, 0, 0.877);
+  display        : flex;
+  justify-content: space-between;
+  flex           : 0.95;
+  align-items    : center;
+  padding        : 1rem;
+}
+
+.info-right__btns i {
+  cursor: pointer;
+}
+
+
 .info-right__caption {
-  position     : absolute;
-  bottom       : 0;
-  left         : 0;
-  margin       : 0.5rem;
-  background   : #00000088;
-  padding      : 2rem;
-  border-radius: 40px;
-  color        : white;
+  margin         : 0.5rem;
+  background     : #00000088;
+  padding        : 2rem;
+  border-radius  : 40px;
+  color          : white;
+  flex           : 0.05;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
 }
 
 
