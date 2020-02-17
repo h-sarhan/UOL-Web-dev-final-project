@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <!-- This is the main page -->
 <html lang="en">
+
   <head>
     <!-- The following code relates to the icon that the website uses-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./icons/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
     <link rel="manifest" href="./icons/site.webmanifest" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- This code imports the FontAwesome icon library -->
-    <script
-      src="https://kit.fontawesome.com/734e2b76ce.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/734e2b76ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css" />
     <title>Darkness Into Light | Abu Dhabi</title>
   </head>
@@ -43,16 +27,12 @@
       <div class="navbar__links">
         <!-- This is a link to the events page -->
         <a href="./pages/events.html" class="navbar__link upcoming-events">
-          <i class="fas fa-walking"></i> Upcoming Events</a
-        >
+          <i class="fas fa-walking"></i> Upcoming Events</a>
         <!-- Pressing this link scrolls down till you reach the news articles-->
         <a href="#news" class="navbar__link news-feed">
-          <i class="fas fa-newspaper"></i> News Feed</a
-        >
+          <i class="fas fa-newspaper"></i> News Feed</a>
         <!-- This is a link to the "about us" page -->
-        <a href="./pages/about-us.html" class="navbar__link about-us"
-          ><i class="fas fa-info-circle"></i> About Us</a
-        >
+        <a href="./pages/about-us.html" class="navbar__link about-us"><i class="fas fa-info-circle"></i> About Us</a>
       </div>
     </nav>
 
@@ -64,11 +44,7 @@
       <!-- This is the left half of the info section. It contains the logo and interactive icons that display information if you click/hover on them-->
       <div class="info-left">
         <!-- Logo -->
-        <img
-          src="images/cover3.png"
-          alt="darkness into light logo"
-          class="info__logo"
-        />
+        <img src="images/cover3.png" alt="darkness into light logo" class="info__logo" />
         <!-- Box that fills up with text information as you hover/click on the icons below it -->
         <p class="info__text"></p>
         <!-- Interactive icons. I used icons from the FontAwesome library imported in the head tag -->
@@ -103,11 +79,7 @@
       <h1 class="newsletter-cta__title">Join Our Newsletter</h1>
       <form class="newsletter-cta__form">
         <!-- I used Javascript to decrease the font size of the email as it gets larger. I also used Javascript to validate the email-->
-        <input
-          type="email"
-          placeholder="john@example.com"
-          class="newsletter-cta__email"
-        />
+        <input type="email" placeholder="john@example.com" class="newsletter-cta__email" />
         <!-- The join button will get larger and display a thank you message if the email input was valid. -->
         <button class="newsletter-cta__btn">Join</button>
       </form>
@@ -121,12 +93,11 @@
     <!-- This is an individual summary of a news article.
        It consists of a background, a heading, a summary paragraph, and a "Read More" button -->
     <section class="summary summary-1">
-      <h1 class="summary-heading">Summary 1</h1>
+      <h1 class="summary-heading">What Causes Depression?</h1>
       <p class="summary-paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-        laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptatibus voluptates aliquam dolore perspiciatis modi sed repellendus
-        incidunt alias harum minus?
+        It's often said that depression results from a chemical imbalance, but that figure of speech doesn't capture how
+        complex the disease is. Research suggests that depression doesn't spring from simply having too much or too
+        little of certain brain chemicals
       </p>
 
       <a href="./pages/article-1.html" class="summary-btn">Read More</a>
@@ -135,24 +106,23 @@
     <!-- This is an individual summary of a news article.
        It consists of a background, a heading, a summary paragraph, and a "Read More" button -->
     <section class="summary summary-2">
-      <h1 class="summary-heading">Summary 2</h1>
+      <h1 class="summary-heading">Exercise as a Treatment for Depression</h1>
       <p class="summary-paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-        animi facilis in natus accusamus, quis aliquam non excepturi! Aperiam,
-        ab?
+        One in 10 adults in the United States struggles with depression, and antidepressant medications are a common way
+        to treat the condition. However, pills aren't the only solution. Research shows that exercise is also an
+        effective treatment.
       </p>
       <a href="./pages/article-2.html" class="summary-btn">Read More</a>
     </section>
 
     <footer class="footer">
       <!-- Fine print -->
-      <small class="copyright"
-        >Copyright © Darkness Into Light. All Rights Reserved.</small
-      >
+      <small class="copyright">Copyright © Darkness Into Light. All Rights Reserved.</small>
     </footer>
     <script src="./js/carousel.js"></script>
     <script src="./js/icons.js"></script>
     <script src="./js/email.js"></script>
     <script src="./js/navbar.js"></script>
   </body>
+
 </html>

@@ -322,7 +322,7 @@ body {
   background-blend-mode: overlay;
   background-position  : center;
   background-size      : cover;
-  background-repeat    : none;
+  background-repeat    : no-repeat;
   height               : 80vh;
   display              : flex;
   flex-direction       : column;
@@ -520,8 +520,18 @@ body {
   background: url('../images/jayson-hinrichsen-cw92WXzhrmE-unsplash.jpg');
 }
 
+.profile__image3 {
+  background: url('https://randomuser.me/api/portraits/men/1.jpg');
+}
+
+.profile__image4 {
+  background: url('https://randomuser.me/api/portraits/women/77.jpg');
+}
+
 .profile__image1,
-.profile__image2 {
+.profile__image2,
+.profile__image3,
+.profile__image4 {
   background-size    : cover;
   background-position: center;
   background-repeat  : no-repeat;
@@ -578,7 +588,7 @@ body {
 .article-2-header__title {
   font-size     : 4rem;
   font-family   : 'Cousine', monospace;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   color         : white;
 }
 
@@ -620,6 +630,27 @@ body {
   margin     : 1rem;
 }
 
+.article__content {
+  margin     : 2rem 8rem;
+  font-size  : 1.1rem;
+  line-height: 2rem;
+
+}
+
+.article__container {
+  padding      : 3rem;
+  background   : #dfe6e9;
+  border-radius: 4rem;
+}
+
+.article__container h2 {
+  text-align: center;
+  margin    : 2rem;
+}
+
+.article__container p {
+  margin: 1rem;
+}
 
 /* ------------------------------ Responsive Media Query -------------------------- */
 @media only screen and (max-width: 600px) {
