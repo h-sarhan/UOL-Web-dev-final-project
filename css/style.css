@@ -1,3 +1,5 @@
+/* -------------------- Importing Fonts ------------------- */
+
 /* Lato and Raleway fonts */
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
 
@@ -7,6 +9,7 @@
 /* Lobster Font */
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
 
+/* ---------------------- CSS Reset & Utility Classes---------------- */
 * {
   box-sizing     : border-box;
   margin         : 0;
@@ -15,23 +18,20 @@
   scroll-behavior: smooth;
 }
 
+/* This gives the page a nice border around the edges of the screen */
 body {
   padding: 1.5rem;
 }
 
-
-
-/* Photo by Dawid Zawiła on Unsplash */
-.header-image {
-  background         : url('../images/dawid-zawila-zb2vBaHYB2I-unsplash.jpg');
-  overflow           : hidden;
-  background-position: center;
-  background-repeat  : no-repeat;
-  background-size    : cover;
-  height             : 60vh;
+.hidden {
+  display: none;
 }
 
+.footer {
+  text-align: center;
+}
 
+/* -------------------- Navigation Bar --------------- */
 .navbar {
   border-radius: 4rem;
   background   : #EDED1B;
@@ -73,6 +73,16 @@ body {
   font-size: 1.5rem;
 }
 
+/* -------------------- Home Page ------------------ */
+
+.header-image {
+  background         : url('../images/dawid-zawila-zb2vBaHYB2I-unsplash.jpg');
+  overflow           : hidden;
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  height             : 60vh;
+}
 
 
 
@@ -200,7 +210,7 @@ body {
   padding                   : 1rem;
   text-align                : center;
   border-radius             : 20px;
-  font-size                 : 1.5rem;
+  font-size                 : 1.2rem;
   border-bottom-right-radius: 0;
   border-top-right-radius   : 0;
   transition                : all 0.3s ease-in;
@@ -305,7 +315,7 @@ body {
 }
 
 
-
+/* ---------------------- Events Page ------------------------ */
 .events-header {
   /* Photo by Maddi Bazzocco on Unsplash */
   background           : rgba(0, 0, 0, 0.4) url('../images/maddi-bazzocco-waNAJOI7Jz8-unsplash.jpg');
@@ -362,16 +372,14 @@ body {
 
 
 .events-card__text {
-  text-align           : center;
-  display              : flex;
-  flex-direction       : column;
-  align-items          : center;
-  color                : white;
-  visibility           : hidden;
-  /* margin-top        : 2rem; */
-  justify-content      : flex-end;
-  transition           : all 0.2s ease-in;
-  /* transform         : translateY(-40px); */
+  text-align     : center;
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  color          : white;
+  visibility     : hidden;
+  justify-content: flex-end;
+  transition     : all 0.2s ease-in;
 }
 
 
@@ -439,13 +447,8 @@ body {
 
 }
 
-.hidden {
-  display: none;
-}
 
-
-
-
+/* ----------------------- About Us Page --------------------- */
 
 .who-we-are-what-we-do {
   display: flex;
@@ -547,7 +550,7 @@ body {
   margin-bottom: 1rem;
 }
 
-
+/* ----------------------- Article 1 & 2 -------------------------- */
 .article-1-header {
   background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
 }
@@ -617,6 +620,8 @@ body {
   margin     : 1rem;
 }
 
+
+/* ------------------------------ Responsive Media Query -------------------------- */
 @media only screen and (max-width: 600px) {
   body {
     padding: 0.5rem;
@@ -659,8 +664,7 @@ body {
 
   .newsletter-cta__email,
   .newsletter-cta__btn--joined {
-    font-size: 1rem;
-    padding  : 0.5rem;
+    padding: 0.5rem;
   }
 
   .summary-paragraph {
