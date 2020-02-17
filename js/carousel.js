@@ -28,15 +28,15 @@ var rightBtn = btns.children[1];
 
 // This array contains the path to each image in the carousel
 var images = [
-  '../images/Slideshow Images/cristina-gottardi-boxam4k4rQw-unsplash.jpg',
-  '../images/Slideshow Images/lochlainn-riordan-G6CR8v_bts0-unsplash.jpg',
+  'https://www.irishexaminer.com/remote/media.central.ie/media/images/d/DarknessIntoLightGenericMay19_large.jpg?width=648&s=ie-923079',
+  'https://d1ip5jxnm6z0z2.cloudfront.net/17b3zm79tyjkggs8.jpg',
   '../images/82687168_1006968263021574_2332176493087555584_o.jpg',
 ];
 
 // This array contains the description of each image in the carousel
 var captions = [
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, commodi?',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, commodi?',
+  'A photo from one of our walks in Ireland',
+  "A photo from one of our doggy meetups. Dogs have the ability to cheer anyone up",
   'A group photo right after one one of our yoga events',
 ];
 

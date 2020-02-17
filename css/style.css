@@ -23,9 +23,6 @@ body {
   padding: 1.5rem;
 }
 
-.hidden {
-  display: none;
-}
 
 .footer {
   text-align: center;
@@ -380,6 +377,7 @@ body {
   visibility     : hidden;
   justify-content: flex-end;
   transition     : all 0.2s ease-in;
+  line-height    : 1.2rem;
 }
 
 
@@ -521,22 +519,23 @@ body {
 }
 
 .profile__image3 {
-  background: url('https://randomuser.me/api/portraits/men/1.jpg');
+  background: url('https://pbs.twimg.com/profile_images/1000050491970260993/FJkauyEa.jpg');
 }
 
 .profile__image4 {
-  background: url('https://randomuser.me/api/portraits/women/77.jpg');
+  background: url('https://i.imgur.com/h2E4WGw.jpg');
 }
 
 .profile__image1,
 .profile__image2,
 .profile__image3,
 .profile__image4 {
+  flex               : 0.08;
   background-size    : cover;
   background-position: center;
   background-repeat  : no-repeat;
-  border-radius      : 120px;
-  padding            : 8rem;
+  border-radius      : 130px;
+  padding            : 6rem;
   box-shadow         : 0px 44px 55px -10px rgba(0, 0, 0, 0.75);
 
 }
@@ -546,6 +545,7 @@ body {
   flex-direction : column;
   justify-content: space-evenly;
   width          : 50%;
+  font-size      : 1.2rem;
 }
 
 .profile__paragraph {
@@ -650,6 +650,10 @@ body {
 
 .article__container p {
   margin: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ------------------------------ Responsive Media Query -------------------------- */
