@@ -44,7 +44,8 @@ body {
 }
 
 
-.navbar__link {
+.navbar__link,
+.navbar__mobile-link {
   padding        : 1rem;
   flex           : 1;
   border         : black 2px solid;
@@ -56,12 +57,13 @@ body {
   color          : black;
 }
 
-.navbar__link:first-child {
+
+.upcoming-events {
   border-top-left-radius   : 4rem;
   border-bottom-left-radius: 4rem;
 }
 
-.navbar__link:last-child {
+.contact-us {
   border-top-right-radius   : 4rem;
   border-bottom-right-radius: 4rem;
 }
@@ -74,6 +76,9 @@ body {
   display: none;
 }
 
+.navbar__mobile-link {
+  display: none;
+}
 
 /* -------------------- Home Page ------------------ */
 
@@ -691,7 +696,8 @@ body {
     border-bottom-right-radius: 0;
   }
 
-  .navbar__link {
+  .navbar__link,
+  .navbar__mobile-link {
     border-bottom: none;
   }
 
@@ -715,9 +721,23 @@ body {
     background             : black;
     border-radius          : 3rem;
     font-size              : 1.5rem;
-    padding                : 0.5rem;
+    padding                : 0.3rem;
     border-top-left-radius : 0;
     border-top-right-radius: 0;
+  }
+
+  .upcoming-events {
+    border-top-left-radius   : 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .navbar__mobile-link {
+    display: block;
+  }
+
+  .hamburger-menu-icon {
+    float: left;
+
   }
 
   .collapsed {

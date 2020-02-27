@@ -1,11 +1,13 @@
 // This variable is an array representing all the navbar__link DOM objects
 var navbarLinks = document.querySelectorAll('.navbar__link');
+
 // This is an array of colors
 var colors = ['#2980b9', '#2ecc71', '#d35400', '#5758BB'];
 
 var navbarExpand = document.querySelector('.navbar__expand');
 var showNav = navbarExpand.querySelector('.show-nav');
 var hideNav = navbarExpand.querySelector('.hide-nav');
+var mobileLink = document.querySelector('.navbar__mobile-link');
 // This is the default background
 var defaultBackground = '';
 
@@ -26,11 +28,12 @@ navbarLinks.forEach((link, idx) => {
 
 if (screen.width < 800) {
   navbarExpand.addEventListener('click', function () {
-    navbarLinks.forEach((link, idx) => {
+    navbarLinks.forEach((link) => {
       link.classList.toggle('collapsed');
     })
-    navbarLinks[0].classList.remove('collapsed');
-    navbarLinks[0].classList.toggle('bottom-border');
+    mobileLink.classList.remove('collapsed');
+    mobileLink.classList.remove('collapsing');
+    mobileLink.classList.toggle('bottom-border');
     showNav.classList.toggle('collapsed');
     hideNav.classList.toggle('collapsed');
 
