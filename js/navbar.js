@@ -26,16 +26,18 @@ navbarLinks.forEach((link, idx) => {
   });
 });
 
-if (screen.width < 800) {
-  navbarExpand.addEventListener('click', function () {
+function makeCollapsible(element) {
+  element.addEventListener('click', function () {
     navbarLinks.forEach((link) => {
       link.classList.toggle('collapsed');
     })
     mobileLink.classList.remove('collapsed');
-    mobileLink.classList.remove('collapsing');
     mobileLink.classList.toggle('bottom-border');
     showNav.classList.toggle('collapsed');
     hideNav.classList.toggle('collapsed');
 
   });
 }
+
+makeCollapsible(navbarExpand);
+makeCollapsible(mobileLink);

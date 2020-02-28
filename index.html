@@ -18,16 +18,12 @@
   </head>
 
   <body>
-    <!-- This is the header image -->
-    <header class="header-image"></header>
-
     <!-- This is the navbar -->
     <nav class="navbar">
       <!-- These are the navbar links-->
       <div class="navbar__links">
-
-        <a href="#" class="navbar__mobile-link bottom-border mobile-menu"><i
-            class="fas fa-bars hamburger-menu-icon"></i>Menu</a>
+        <!-- This is a link to expand the navbar that only appears on mobile -->
+        <div class="navbar__mobile-link bottom-border"><i class="fas fa-bars hamburger-menu-icon"></i>Menu</div>
         <!-- This is a link to the events page -->
         <a href="./pages/events.html" class="navbar__link upcoming-events collapsed">
           <i class="fas fa-walking"></i> Upcoming Events</a>
@@ -37,9 +33,9 @@
         <!-- This is a link to the "about us" page -->
         <a href="./pages/about-us.html" class="navbar__link about-us collapsed"><i class="fas fa-info-circle"></i> About
           Us</a>
-        <!-- This is a link to the "contact us" page -->
-        <a href="./pages/contact-us.html" class="navbar__link contact-us collapsed"><i class="fas fa-envelope"></i>
-          Contact Us</a>
+        <!-- This is a link to the "our walks" page -->
+        <a href="./pages/our-walks.html" class="navbar__link our-walks collapsed"><i class="fas fa-globe-asia"></i>
+          Our Walks</a>
       </div>
       <!-- This is the expand icon that only appears on mobile -->
       <div class="navbar__expand"><i class="fas fa-chevron-down show-nav"></i><i
@@ -56,7 +52,7 @@
         <!-- Logo -->
         <img src="images/cover3.png" alt="darkness into light logo" class="info__logo" />
         <!-- Box that fills up with text information as you hover/click on the icons below it -->
-        <p class="info__text"></p>
+        <p class="info__text">Click the icons!</p>
         <!-- Interactive icons. I used icons from the FontAwesome library imported in the head tag -->
         <div class="info__icons">
           <i class="fas fa-map-marker-alt info__location"></i>

@@ -23,14 +23,24 @@
     <nav class="navbar">
       <!-- These are the navbar links-->
       <div class="navbar__links">
+        <!-- This is a link to expand the navbar that only appears on mobile -->
+        <div class="navbar__mobile-link bottom-border"><i class="fas fa-bars hamburger-menu-icon"></i>Menu</div>
         <!-- This is a link to the events page -->
-        <a href="../pages/events.html" class="navbar__link upcoming-events"> <i class="fas fa-walking"></i> Upcoming
+        <a href="../pages/events.html" class="navbar__link upcoming-events collapsed"> <i class="fas fa-walking"></i>
+          Upcoming
           Events</a>
         <!-- This is a link to the home page-->
-        <a href="../index.html" class="navbar__link news-feed"><i class="fas fa-newspaper"></i> Home</a>
+        <a href="../index.html" class="navbar__link news-feed collapsed"><i class="fas fa-home"></i> Home</a>
         <!-- This is a link to the "about us" page -->
-        <a href="../pages/about-us.html" class="navbar__link about-us"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="../pages/about-us.html" class="navbar__link about-us collapsed"><i class="fas fa-info-circle"></i>
+          About Us</a>
+        <!-- This is a link to the "our walks" page -->
+        <a href="../pages/our-walks.html" class="navbar__link our-walks collapsed"><i class="fas fa-globe-asia"></i>
+          Our Walks</a>
       </div>
+      <!-- This is the expand icon that only appears on mobile -->
+      <div class="navbar__expand"><i class="fas fa-chevron-down show-nav"></i><i
+          class="fas fa-chevron-up hide-nav collapsed"></i></div>
     </nav>
 
     <!-- The main header of this page is two blocks of text with a background that goes from from a dark color to a light color -->
@@ -41,7 +51,7 @@
         <p class="what-we-do__paragraph"> We do everything in our power to help those who are suffering from mental
           health issues. We do this by running support groups, organizing community events, and fundraising. We are
           perhaps most well
-          known for our annual walk, which had over 200,000 participants worldwide.
+          known for our annual walk, which once had over 200,000 participants worldwide.
 
         </p>
       </div>

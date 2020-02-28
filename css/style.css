@@ -20,7 +20,7 @@
 
 /* This gives the page a nice border around the edges of the screen */
 body {
-  padding: 1.5rem;
+  margin: 1.5rem 4rem;
 }
 
 
@@ -29,10 +29,12 @@ body {
 }
 
 /* -------------------- Navigation Bar --------------- */
+
+
 .navbar {
   border-radius: 4rem;
   background   : #EDED1B;
-  margin       : 0.5rem;
+  margin       : 1rem;
 }
 
 .navbar__links {
@@ -63,7 +65,7 @@ body {
   border-bottom-left-radius: 4rem;
 }
 
-.contact-us {
+.our-walks {
   border-top-right-radius   : 4rem;
   border-bottom-right-radius: 4rem;
 }
@@ -82,14 +84,7 @@ body {
 
 /* -------------------- Home Page ------------------ */
 
-.header-image {
-  background         : url('../images/dawid-zawila-zb2vBaHYB2I-unsplash.jpg');
-  overflow           : hidden;
-  background-position: center;
-  background-repeat  : no-repeat;
-  background-size    : cover;
-  height             : 60vh;
-}
+
 
 
 
@@ -163,7 +158,7 @@ body {
 
 .info-right__btns {
   font-size      : 3rem;
-  color          : rgba(0, 0, 0, 0.877);
+  color          : white;
   display        : flex;
   justify-content: space-between;
   flex           : 0.95;
@@ -172,7 +167,10 @@ body {
 }
 
 .info-right__btns i {
-  cursor: pointer;
+  background   : #00000088;
+  padding      : 1rem 1.33rem;
+  border-radius: 10rem;
+  cursor       : pointer;
 }
 
 
@@ -186,7 +184,6 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
-
 }
 
 
@@ -666,10 +663,129 @@ body {
   display: none;
 }
 
+
+/* ------------------------- Our Walks Page ----------------------------------------- */
+
+.our-walks-header {
+  /* Photo by NASA on Unsplash */
+  background           : rgba(0, 0, 0, 0.4) url('../images/nasa-Q1p7bh3SHj8-unsplash.jpg');
+  background-blend-mode: overlay;
+  background-position  : center;
+  background-size      : cover;
+  background-repeat    : no-repeat;
+  height               : 80vh;
+  display              : flex;
+  flex-direction       : column;
+  justify-content      : center;
+}
+
+.our-walks-header__text--title {
+  color      : white;
+  font-size  : 5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align : center;
+}
+
+.our-walks-header__text--subtitle {
+  color      : white;
+  font-size  : 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align : center;
+}
+
+
+
+
+.our-walks-main {
+  height : 100vh;
+  display: flex;
+
+}
+
+.our-walks-main__left {
+  height    : 100%;
+  padding   : 4rem;
+  flex      : 0.4;
+  background: #EDED1B;
+}
+
+.our-walks-main__right {
+  height        : 100%;
+  flex          : 0.6;
+  display       : flex;
+  flex-direction: column;
+  background    : #EDED1B;
+}
+
+#map {
+  flex: 1;
+}
+
+.our-walks-photos {
+  flex                 : 1;
+  margin               : 1rem;
+  background           : url('../images/82687168_1006968263021574_2332176493087555584_o.jpg');
+  background-position  : center;
+  background-size      : cover;
+  background-repeat    : no-repeat;
+  background-blend-mode: overlay;
+}
+
+.our-walks-photos__overlay {
+  display       : flex;
+  flex-direction: column;
+  height        : 100%;
+}
+
+.our-walks-photos__btns {
+  font-size      : 3rem;
+  color          : white;
+  display        : flex;
+  justify-content: space-between;
+  flex           : 0.95;
+  align-items    : center;
+  padding        : 1rem;
+}
+
+.our-walks-photos__btns i {
+  background   : #00000088;
+  padding      : 1rem 1.33rem;
+  border-radius: 10rem;
+  cursor       : pointer;
+}
+
+
+.our-walks-main__list {
+  list-style: none;
+}
+
+.our-walks-main__inner-list-heading {
+  font-size  : 2rem;
+  font-weight: bolder;
+}
+
+.our-walks-main__individual {
+  list-style      : none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius   : 4rem;
+  padding         : 1.5rem;
+  margin          : 1rem 0;
+  text-align      : center;
+  cursor          : pointer;
+}
+
+
+.our-walks-main__go-back {
+  cursor    : pointer;
+  font-size : 2rem;
+  visibility: hidden;
+}
+
 /* ------------------------------ Responsive Media Query -------------------------- */
 @media only screen and (max-width: 600px) {
   body {
     padding: 0.5rem;
+    margin : 0;
   }
 
   .header-image {
@@ -726,6 +842,18 @@ body {
     border-top-right-radius: 0;
   }
 
+  .info__text {
+    visibility: visible;
+  }
+
+  .info-right__btns {
+    font-size: 1.5rem;
+  }
+
+  .info-right__btns i {
+    padding: 0.5rem 0.66rem;
+  }
+
   .upcoming-events {
     border-top-left-radius   : 0;
     border-bottom-left-radius: 0;
@@ -776,7 +904,7 @@ body {
 
   .newsletter-cta__email,
   .newsletter-cta__btn--joined {
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 
   .summary-paragraph {
@@ -853,7 +981,7 @@ body {
 
   .article-1-header__title,
   .article-2-header__title {
-    letter-spacing : 1rem;
+    letter-spacing : 0.5rem;
     font-size      : 2rem;
     flex           : 1;
     display        : flex;
@@ -863,7 +991,30 @@ body {
 
   .article-1-header__profile,
   .article-2-header__profile {
-
     flex: 1;
   }
+
+  .article__content {
+    font-size  : 1rem;
+    line-height: normal;
+    margin     : 1rem 0.5rem;
+
+  }
+
+  .article__container {
+    padding      : 1rem;
+    background   : #dfe6e9;
+    border-radius: 4rem;
+  }
+
+  .article__container h2 {
+    text-align: center;
+    margin    : 1rem;
+  }
+
+  .article__container p {
+    margin: 1rem;
+  }
+
+
 }

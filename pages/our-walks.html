@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- This is the "About Us" page -->
+<html lang="en">
+
+  <head>
+    <!-- The followig code relates to the icon that the website uses -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="../icons/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This code imports the FontAwesome icon library -->
+    <script src="https://kit.fontawesome.com/734e2b76ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Our Walks | Darkness into Light</title>
+  </head>
+
+
+  <body>
+    <!-- This is the navbar -->
+    <nav class="navbar">
+      <!-- These are the navbar links-->
+      <div class="navbar__links">
+        <!-- This is a link to expand the navbar that only appears on mobile -->
+        <div class="navbar__mobile-link bottom-border"><i class="fas fa-bars hamburger-menu-icon"></i>Menu</div>
+        <!-- This is a link to the events page -->
+        <a href="../pages/events.html" class="navbar__link upcoming-events collapsed"> <i class="fas fa-walking"></i>
+          Upcoming
+          Events</a>
+        <!-- This is a link to the home page-->
+        <a href="../index.html" class="navbar__link news-feed collapsed"><i class="fas fa-home"></i> Home</a>
+        <!-- This is a link to the "about us" page -->
+        <a href="../pages/about-us.html" class="navbar__link about-us collapsed"><i class="fas fa-info-circle"></i>
+          About Us</a>
+        <!-- This is a link to the "our walks" page -->
+        <a href="../pages/our-walks.html" class="navbar__link our-walks collapsed"><i class="fas fa-globe-asia"></i>
+          Our Walks</a>
+      </div>
+      <!-- This is the expand icon that only appears on mobile -->
+      <div class="navbar__expand"><i class="fas fa-chevron-down show-nav"></i><i
+          class="fas fa-chevron-up hide-nav collapsed"></i></div>
+    </nav>
+
+    <!-- This header consists of a dimmed background image and a title -->
+    <header class="our-walks-header">
+      <!-- Header title -->
+      <p class="our-walks-header__text--title">Our Global Walks</p>
+      <p class="our-walks-header__text--subtitle">Charting the Globe One Walk at a Time</p>
+
+    </header>
+
+
+    <section class="our-walks-main">
+      <!-- This is the left half of the main section. It contains the links to all the global Darkness into Light Branches-->
+      <div class="our-walks-main__left">
+        <div class="our-walks-main__go-back"><i class="fas fa-arrow-left"></i></div>
+        <ul class="our-walks-main__list">
+          <li class="our-walks-main__individual">
+            <p class="our-walks-main__inner-list-heading">North America</p>
+          </li>
+          <li class="our-walks-main__individual">
+            <p class="our-walks-main__inner-list-heading">Europe</p>
+          </li>
+          <li class="our-walks-main__individual">
+            <p class="our-walks-main__inner-list-heading">Oceania</p>
+          </li>
+        </ul>
+      </div>
+      <!-- This is the right half of the main section. It contains a map showing where the branch is located-->
+      <div class="our-walks-main__right">
+        <section class="our-walks-photos">
+          <div class="our-walks-photos__overlay"></div>
+        </section>
+        <div id="map"></div>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- Fine print -->
+      <small class="copyright">Copyright © Darkness Into Light. All Rights Reserved.</small>
+    </footer>
+    <script src="../js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvhVOD-fBpLct23UOdef2Y4NoWWpShuMs&callback=initMap"
+      async defer></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+
+
+</html>
