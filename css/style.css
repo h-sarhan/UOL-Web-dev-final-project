@@ -677,6 +677,8 @@ body {
   display              : flex;
   flex-direction       : column;
   justify-content      : center;
+  align-items          : center;
+
 }
 
 .our-walks-header__text--title {
@@ -693,7 +695,16 @@ body {
   text-align : center;
 }
 
-
+.our-walks-header__text--paragraph {
+  color        : black;
+  font-size    : 1.2rem;
+  font-family  : 'Raleway', sans-serif;
+  text-align   : center;
+  background   : rgba(255, 255, 255, 0.6);
+  padding      : 3rem;
+  margin       : 1rem;
+  border-radius: 3rem;
+}
 
 
 .our-walks-main {
@@ -717,6 +728,11 @@ body {
   background    : #EDED1B;
 }
 
+.our-walks-main__breadcrumbs {
+  text-align: center;
+  font-size : 1.5rem;
+}
+
 #map {
   flex: 1;
 }
@@ -724,7 +740,7 @@ body {
 .our-walks-photos {
   flex                 : 1;
   margin               : 1rem;
-  background           : url('../images/82687168_1006968263021574_2332176493087555584_o.jpg');
+  background           : url('https://scontent.ffjr1-1.fna.fbcdn.net/v/t1.0-9/s960x960/88133941_1520101454838251_1893504158565138432_o.jpg?_nc_cat=102&_nc_sid=dd9801&_nc_ohc=zVeHZ_weJgcAX86ItdH&_nc_ht=scontent.ffjr1-1.fna&_nc_tp=7&oh=2db618b45b745ddeeade12189042f458&oe=5F036646');
   background-position  : center;
   background-size      : cover;
   background-repeat    : no-repeat;

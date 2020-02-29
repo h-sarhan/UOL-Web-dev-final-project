@@ -43,19 +43,31 @@
           class="fas fa-chevron-up hide-nav collapsed"></i></div>
     </nav>
 
-    <!-- This header consists of a dimmed background image and a title -->
+    <!-- This header consists of a dimmed background image, a title, and a description of the page -->
     <header class="our-walks-header">
       <!-- Header title -->
       <p class="our-walks-header__text--title">Our Global Walks</p>
+      <!-- Header subtitle -->
       <p class="our-walks-header__text--subtitle">Charting the Globe One Walk at a Time</p>
+      <!-- Header description -->
+      <p class="our-walks-header__text--paragraph">Here you can see where our walks have taken place around the
+        world.<br>
+        You can also see pictures from our walks at the locations below</p>
 
     </header>
 
 
     <section class="our-walks-main">
-      <!-- This is the left half of the main section. It contains the links to all the global Darkness into Light Branches-->
+      <!-- This is the left half of the main section. It is an interactive menu containing the links to all the global Darkness into Light Branches-->
       <div class="our-walks-main__left">
-        <div class="our-walks-main__go-back"><i class="fas fa-arrow-left"></i></div>
+        <!-- This is a back button that interacts with the menu through javascript-->
+        <p class="our-walks-main__go-back"><i class="fas fa-arrow-left"></i></p>
+        <!-- These are some breadcrumbs that are dynamically written as you progress through the menu -->
+        <p class="our-walks-main__breadcrumbs"></p>
+        <!-- This is the inital state of the menu before it dynamically changes due to the javascript that I have written.
+        Initially it shows the continents, and when you click on them you will be taken to a list of that continent's countries.
+        Similarly when you press on a country you will be taken to a list of that country's cities. 
+        I also made it so that the map dynamically pans to whichever continent, country, or city is selected-->
         <ul class="our-walks-main__list">
           <li class="our-walks-main__individual">
             <p class="our-walks-main__inner-list-heading">North America</p>
@@ -68,7 +80,7 @@
           </li>
         </ul>
       </div>
-      <!-- This is the right half of the main section. It contains a map showing where the branch is located-->
+      <!-- This is the right half of the main section. It contains a map showing where the branch is located as well as a photo from a walk that took place at that city -->
       <div class="our-walks-main__right">
         <section class="our-walks-photos">
           <div class="our-walks-photos__overlay"></div>
@@ -83,6 +95,7 @@
       <small class="copyright">Copyright © Darkness Into Light. All Rights Reserved.</small>
     </footer>
     <script src="../js/map.js"></script>
+    <!-- Loads the google maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvhVOD-fBpLct23UOdef2Y4NoWWpShuMs&callback=initMap"
       async defer></script>
     <script src="../js/navbar.js"></script>
