@@ -1144,9 +1144,16 @@ body {
     padding: 1rem;
   }
 
-  /* Sets the heigght for the container of the photo and interactive map on mobile */
+  /* Sets the height for the container of the photo and interactive map on mobile */
   .our-walks-main__right {
     height: 70vh;
+  }
+
+  /* This decreases the margin and padding of the menu items */
+  .our-walks-main__individual {
+    padding: 0.8rem;
+    margin : 0.5rem 1rem;
+
   }
 
   /* Decreases the size of the text in the breadcrumbs */
