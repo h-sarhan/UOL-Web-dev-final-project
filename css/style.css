@@ -23,20 +23,21 @@ body {
   margin: 1.5rem 4rem;
 }
 
-
+/* This aligns the footer text */
 .footer {
   text-align: center;
 }
 
 /* -------------------- Navigation Bar --------------- */
 
-
+/* This styles the navbar by giving it a border radius and a yellow background color */
 .navbar {
   border-radius: 4rem;
   background   : #EDED1B;
   margin       : 1rem;
 }
 
+/* I used flexbox to align the links in the navbar */
 .navbar__links {
   display        : flex;
   justify-content: stretch;
@@ -45,7 +46,7 @@ body {
 
 }
 
-
+/* This styles each individual link in the navbar */
 .navbar__link,
 .navbar__mobile-link {
   padding        : 1rem;
@@ -59,25 +60,29 @@ body {
   color          : black;
 }
 
-
+/* This makes it so the left edge of the navbar is circular */
 .upcoming-events {
   border-top-left-radius   : 4rem;
   border-bottom-left-radius: 4rem;
 }
 
+/* This makes it so the right edge of the navbar is circular */
 .our-walks {
   border-top-right-radius   : 4rem;
   border-bottom-right-radius: 4rem;
 }
 
+/* This sets the size for the icons in the navbar */
 .navbar__link i {
   font-size: 1.5rem;
 }
 
+/* This hides the expand button of the navbar. It is only meant to be shown on mobile */
 .navbar__expand {
   display: none;
 }
 
+/* This hides the menu link of the navbar. It is only meant to be shown on mobile */
 .navbar__mobile-link {
   display: none;
 }
@@ -87,7 +92,7 @@ body {
 
 
 
-
+/* This is the container of the info section. I used flexbox to split it into two halfs horizontally */
 .info {
   padding         : 0;
   height          : 75vh;
@@ -96,6 +101,7 @@ body {
 
 }
 
+/* This is the left half of the navbar that contains the logo, icons, and the icon descriptions. It takes up 40% of the width of the info section */
 .info-left {
   flex           : 0.4;
   display        : flex;
@@ -104,10 +110,12 @@ body {
   align-items    : center;
 }
 
+/* This makes the logo stretch across the left half of the info section */
 .info__logo {
   width: 100%;
 }
 
+/* This is the container of the icons. I used flexbox to arrange them horizontally so that they're evenly spaced */
 .info__icons {
   padding        : 1rem;
   display        : flex;
@@ -117,17 +125,20 @@ body {
   cursor         : pointer;
 }
 
+/* This gives the individual icons a shadow and defines a transition animation for all of them */
 .info__icons i {
   box-shadow   : 0px 24px 19px -15px rgba(0, 0, 0, 0.75);
   transition   : all 0.1s ease-in;
   border-radius: 20px;
 }
 
+/* This makes the icons move up and grow slightly bigger when you hover over them */
 .info__icons i:hover {
   transform : translateY(-20px) scale(1.2);
   box-shadow: 0px 34px 19px -15px rgba(0, 0, 0, 0.75);
 }
 
+/* This styles the descriptions of the icons */
 .info__text {
   visibility   : collapse;
   background   : rgb(255, 255, 255, 0.6);
@@ -139,7 +150,7 @@ body {
 }
 
 
-
+/* This is the container for the carousel. It takes up 60% of the width of the info section */
 .info-right {
   flex                 : 0.6;
   height               : 100%;
@@ -150,12 +161,14 @@ body {
   background-blend-mode: overlay;
 }
 
+/* This is the container for the carousel buttons and photo descriptions. They are aligned using flexbox in the column direction*/
 .info-right__overlay {
   display       : flex;
   flex-direction: column;
   height        : 100%;
 }
 
+/* This is the container for the buttons. They are aligned using flexbox */
 .info-right__btns {
   font-size      : 3rem;
   color          : white;
@@ -166,6 +179,7 @@ body {
   padding        : 1rem;
 }
 
+/* This styles each carousel button by giving giving it a background and a border radius */
 .info-right__btns i {
   background   : #00000088;
   padding      : 1rem 1.33rem;
@@ -173,7 +187,7 @@ body {
   cursor       : pointer;
 }
 
-
+/* This styles the description of each photo */
 .info-right__caption {
   margin         : 0.5rem;
   background     : #00000088;
@@ -186,7 +200,7 @@ body {
   justify-content: center;
 }
 
-
+/* This is the container for the newsletter call to action. I used flexbox to align the inner contents */
 .newsletter-cta {
   display        : flex;
   flex-direction : column;
@@ -198,16 +212,19 @@ body {
 
 }
 
+/* Sets the width for the call to action form */
 .newsletter-cta__form {
   width  : 60%;
   display: flex;
 }
+
 
 .newsletter-cta__title {
   color         : white;
   letter-spacing: 0.1rem;
 }
 
+/* This styles the email input */
 .newsletter-cta__email {
   border                    : none;
   flex                      : 0.8;
@@ -220,7 +237,7 @@ body {
   transition                : all 0.3s ease-in;
 }
 
-
+/* This styles the form button and sets a transition animation for it */
 .newsletter-cta__btn {
   border                   : none;
   flex                     : 0.2;
@@ -234,6 +251,7 @@ body {
   transition               : all 0.3s ease-in;
 }
 
+/* This defines what the button will look like once it has accepted an input */
 .newsletter-cta__btn--joined {
   border    : none;
   flex      : 1;
@@ -245,7 +263,7 @@ body {
 }
 
 
-
+/* This is a header that separates the home and about us pages */
 .news-header,
 .meet-the-team-header {
   display        : flex;
@@ -253,6 +271,7 @@ body {
   background     : #EDED1B
 }
 
+/* This styles the text in the header and gives it a dashed border */
 .news-header h1,
 .meet-the-team-header h1 {
   border-bottom: 5px black dashed;
@@ -264,17 +283,19 @@ body {
   font-family  : 'Raleway', sans-serif;
 }
 
+/* This sets the photo for the first article */
 /* Photo by Robina Weermeijer on Unsplash */
 .summary-1 {
   background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
 }
 
+/* This sets the photo for the second article */
 /* Photo by David Marcu on Unsplash */
 .summary-2 {
   background: rgba(0, 0, 0, 0.2) url('../images/david-marcu-8TJbrQGKFyU-unsplash.jpg');
 }
 
-
+/* This styles the article summaries with flexbox */
 .summary {
   background-position  : center;
   background-size      : cover;
@@ -288,10 +309,12 @@ body {
   height               : 70vh;
 }
 
+/* This sets the color of the title of the summary to white */
 .summary-heading {
   color: white;
 }
 
+/* This styles the text summarizing the article */
 .summary-paragraph {
   width        : 40%;
   background   : #3a3a3aaf;
@@ -301,6 +324,7 @@ body {
   padding      : 1rem;
 }
 
+/* This styles the read more button and gives it a transition animation */
 .summary-btn {
   text-decoration: none;
   border-radius  : 3rem;
@@ -312,6 +336,7 @@ body {
   border         : 1.5px solid white;
 }
 
+/* This makes the read more button grow and turn green when you hover over it*/
 .summary-btn:hover {
   transform : scale(1.1);
   background: #4cd137;
@@ -320,8 +345,10 @@ body {
 
 
 /* ---------------------- Events Page ------------------------ */
+
+/* This sets the height of the header and gives it a dimmed background image */
+/* Photo by Maddi Bazzocco on Unsplash */
 .events-header {
-  /* Photo by Maddi Bazzocco on Unsplash */
   background           : rgba(0, 0, 0, 0.4) url('../images/maddi-bazzocco-waNAJOI7Jz8-unsplash.jpg');
   background-blend-mode: overlay;
   background-position  : center;
@@ -333,6 +360,7 @@ body {
   justify-content      : center;
 }
 
+/* This styles the text of the header */
 .events-header__text {
   color      : white;
   font-size  : 5rem;
@@ -341,7 +369,8 @@ body {
 }
 
 
-
+/* This is the container for all the event-cards. I used flexbox to arrange the event-cards and I spaced them evenly.
+  I set flex-wrap to wrap so that the event cads aren't all in one line. The background for this is a pattern I found online. It is referenced in the report */
 .events-container {
   display         : flex;
   justify-content : space-evenly;
@@ -351,14 +380,13 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-
+/* This styles an individual card using flexbox, and sets its height, width, and border */
 .events-card {
   display            : flex;
   flex-direction     : column;
   margin-bottom      : 2rem;
   height             : 40vh;
   width              : 400px;
-  /* border          : 3px solid #2980b9; */
   border             : 3px solid white;
   border-radius      : 19px;
   justify-content    : flex-end;
@@ -374,7 +402,7 @@ body {
   border-radius: 19px;
 }
 
-
+/* This styles the text that appears when you hover over an event */
 .events-card__text {
   text-align     : center;
   display        : flex;
@@ -400,6 +428,7 @@ body {
   ;
 }
 
+/* This styles the button that appears when you hover over an event */
 .events-card__btn:link,
 .events-card__btn:active,
 .events-card__btn {
@@ -415,6 +444,7 @@ body {
   background: #2ecc71;
 }
 
+/* This styles the forms that appear when you click on the registration button */
 .registration-forms {
   display        : flex;
   flex           : 2;
@@ -455,14 +485,17 @@ body {
 
 /* ----------------------- About Us Page --------------------- */
 
+/* Sets the height of the header and uses flexbox to split it into two halfs*/
 .who-we-are-what-we-do {
   display: flex;
   height : 50vh;
 }
 
+/* Styles the left half of the header and sets the background color to be a gradient going from a dark color to a light color (left-to-right) */
 .what-we-do {
   text-align                : center;
   display                   : flex;
+  flex                      : 1;
   border-radius             : 100px;
   border-top-right-radius   : 0;
   border-bottom-right-radius: 0;
@@ -474,9 +507,11 @@ body {
   background                : linear-gradient(to left, #f0f2f0, #000c40 70%);
 }
 
+/* Styles the righr half of the header and sets the background color to be a gradient going from a white color to a yellow color (left-to-right) */
 .who-we-are {
   text-align               : center;
   display                  : flex;
+  flex                     : 1;
   border-radius            : 100px;
   border-top-left-radius   : 0;
   border-bottom-left-radius: 0;
@@ -487,6 +522,7 @@ body {
   background               : linear-gradient(to right, #f0f2f0, #FFD200);
 }
 
+/* Styles the descriptions in the header*/
 .what-we-do__paragraph,
 .who-we-are__paragraph {
   width      : 60%;
@@ -495,49 +531,57 @@ body {
 
 }
 
+/* Gives the titles in the header a different font */
 .what-we-do__heading,
 .who-we-are__heading {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Container for the profiles, aligned with flexbox */
+/* Sets the background to an svg pattern I found on the web. I referenced it in the report */
 .profiles {
-  display       : flex;
-  flex-direction: column;
+  display         : flex;
+  flex-direction  : column;
+  background-color: #fad390;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.54'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 
-
+/* Container for the profile picture, name, and description */
 .profile {
   display        : flex;
   padding        : 1rem;
   padding-bottom : 5rem;
   justify-content: space-evenly;
-
-  background-color: #fad390;
-  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.54'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* Photo by Makson Serpa on Unsplash */
 .profile__image1 {
   background: url('../images/makson-serpa-khIbyobZl_0-unsplash.jpg');
 }
 
+/* Photo by Jayson Hinrichsen on Unsplash */
 .profile__image2 {
   background: url('../images/jayson-hinrichsen-cw92WXzhrmE-unsplash.jpg');
 }
 
+/* Photo from https://uifaces.co/ */
 .profile__image3 {
   background: url('https://pbs.twimg.com/profile_images/1000050491970260993/FJkauyEa.jpg');
 }
 
+
+/* Photo from https://uifaces.co/ */
 .profile__image4 {
   background: url('https://i.imgur.com/h2E4WGw.jpg');
 }
 
+/* Makes the images circular and only take up 10% of the width of its parent. I also added a shadow underneath it */
 .profile__image1,
 .profile__image2,
 .profile__image3,
 .profile__image4 {
-  flex               : 0.08;
+  flex               : 0.1;
   background-size    : cover;
   background-position: center;
   background-repeat  : no-repeat;
@@ -547,20 +591,23 @@ body {
 
 }
 
+/* Aligns the title and the profile description vertically using flexbox  */
 .profile__text {
   display        : flex;
   flex-direction : column;
   justify-content: space-evenly;
   width          : 50%;
-  font-size      : 1.2rem;
 }
 
+/* Sets a semi-tansparent background to the profile description and sets an appropriate font size */
 .profile__paragraph {
   background   : #fddda5d8;
   border-radius: 30px;
   padding      : 2rem;
+  font-size    : 1.2rem;
 }
 
+/* Gives tthe title a stylistic font and a large font size */
 .profile__title {
   font-family  : 'Lobster Two', cursive;
   font-size    : 2.5rem;
@@ -568,16 +615,21 @@ body {
 }
 
 /* ----------------------- Article 1 & 2 -------------------------- */
+
+/* Gives the header a dimmed background image */
+/* Photo by Robina Weermeijer on Unsplash */
 .article-1-header {
   background: rgba(0, 0, 0, 0.3) url('../images/robina-weermeijer-so1L3jsdD3Y-unsplash.jpg');
 }
 
-
+/* Gives the header a dimmed background image */
+/* Photo by RUN 4 FFWPU from Pexels */
 .article-2-header {
   background: rgba(0, 0, 0, 0.3) url('../images/atleten-fitness-hardloopschoenen-loopschoenen-2526878.jpg');
 
 }
 
+/* These are containers for the title and profile of the author. I aligned them using flexbox */
 .article-1-header,
 .article-2-header {
   background-position  : center;
@@ -591,6 +643,7 @@ body {
   height               : 70vh;
 }
 
+/* This styles the title by setting its font size and font family. I also made it so the spacing between the letters is large */
 .article-1-header__title,
 .article-2-header__title {
   font-size     : 4rem;
@@ -599,6 +652,7 @@ body {
   color         : white;
 }
 
+/* This is a container for the authors face and name. I aligned them using flexbox */
 .article-1-header__profile,
 .article-2-header__profile {
   display        : flex;
@@ -608,15 +662,17 @@ body {
   height         : 100%;
 }
 
-
+/* Photo by Makson Serpa on Unsplash */
 .article-1-header__face {
   background: url('../images/makson-serpa-khIbyobZl_0-unsplash.jpg');
 }
 
+/* Photo by Jayson Hinrichsen on Unsplash */
 .article-2-header__face {
   background: url('../images/jayson-hinrichsen-cw92WXzhrmE-unsplash.jpg');
 }
 
+/* This styles and aligns the author's face. I also gave the face a border radius and a box shadow */
 .article-1-header__face,
 .article-2-header__face {
   background-size    : cover;
@@ -629,6 +685,7 @@ body {
   margin             : 1.5rem;
 }
 
+/* This styles the font used for the author's name */
 .article-1-header__name,
 .article-2-header__name {
   font-family: 'Cousine', monospace;
@@ -637,37 +694,38 @@ body {
   margin     : 1rem;
 }
 
+/* This gives the article a wide margin so the article is closer to the middle of the screen */
 .article__content {
   margin     : 2rem 8rem;
   font-size  : 1.1rem;
   line-height: 2rem;
-
 }
 
+/* This is a container for the article text. I gave it some padding so it looks more aesthetically pleasing */
 .article__container {
   padding      : 3rem;
   background   : #dfe6e9;
   border-radius: 4rem;
 }
 
+/* This makes the headers stand out more from the rest of the article */
 .article__container h2 {
   text-align: center;
   margin    : 2rem;
 }
 
+/* This just gives some spacing between the paragraphs of the article */
 .article__container p {
   margin: 1rem;
 }
 
-.hidden {
-  display: none;
-}
 
 
 /* ------------------------- Our Walks Page ----------------------------------------- */
 
+/* This sets the background image, dims it, and aligns the contents of the header using flexbox */
+/* Photo by NASA on Unsplash */
 .our-walks-header {
-  /* Photo by NASA on Unsplash */
   background           : rgba(0, 0, 0, 0.4) url('../images/nasa-Q1p7bh3SHj8-unsplash.jpg');
   background-blend-mode: overlay;
   background-position  : center;
@@ -681,6 +739,7 @@ body {
 
 }
 
+/* This styles the font used for the title */
 .our-walks-header__text--title {
   color      : white;
   font-size  : 5rem;
@@ -688,6 +747,7 @@ body {
   text-align : center;
 }
 
+/* This styles thhe font used for the subtitle */
 .our-walks-header__text--subtitle {
   color      : white;
   font-size  : 1.5rem;
@@ -695,6 +755,7 @@ body {
   text-align : center;
 }
 
+/* This styles the font used for the paragraph and gives it a semi transparent background */
 .our-walks-header__text--paragraph {
   color        : black;
   font-size    : 1.2rem;
@@ -706,13 +767,14 @@ body {
   border-radius: 3rem;
 }
 
-
+/* This sets the height for the main part of the page and splits it into two halves */
 .our-walks-main {
   height : 100vh;
   display: flex;
 
 }
 
+/* This the left halve of the main section of the page. It represents an interactive menu that takes up 40% of the width of this section */
 .our-walks-main__left {
   height    : 100%;
   padding   : 4rem;
@@ -720,66 +782,26 @@ body {
   background: #EDED1B;
 }
 
-.our-walks-main__right {
-  height        : 100%;
-  flex          : 0.6;
-  display       : flex;
-  flex-direction: column;
-  background    : #EDED1B;
-}
-
+/* These are the breadcrumbs that show up as you click on the menu. They are initially hidden */
 .our-walks-main__breadcrumbs {
   text-align: center;
   font-size : 1.5rem;
 }
 
-#map {
-  flex: 1;
+/* This is the back arrow to go to a previous stage in the menu. It is initially hidden */
+.our-walks-main__go-back {
+  cursor    : pointer;
+  font-size : 2rem;
+  visibility: hidden;
 }
 
-.our-walks-photos {
-  flex                 : 1;
-  margin               : 1rem;
-  background           : url('https://scontent.ffjr1-1.fna.fbcdn.net/v/t1.0-9/s960x960/88133941_1520101454838251_1893504158565138432_o.jpg?_nc_cat=102&_nc_sid=dd9801&_nc_ohc=zVeHZ_weJgcAX86ItdH&_nc_ht=scontent.ffjr1-1.fna&_nc_tp=7&oh=2db618b45b745ddeeade12189042f458&oe=5F036646');
-  background-position  : center;
-  background-size      : cover;
-  background-repeat    : no-repeat;
-  background-blend-mode: overlay;
-}
-
-.our-walks-photos__overlay {
-  display       : flex;
-  flex-direction: column;
-  height        : 100%;
-}
-
-.our-walks-photos__btns {
-  font-size      : 3rem;
-  color          : white;
-  display        : flex;
-  justify-content: space-between;
-  flex           : 0.95;
-  align-items    : center;
-  padding        : 1rem;
-}
-
-.our-walks-photos__btns i {
-  background   : #00000088;
-  padding      : 1rem 1.33rem;
-  border-radius: 10rem;
-  cursor       : pointer;
-}
-
-
-.our-walks-main__list {
-  list-style: none;
-}
-
+/* These are the inner text of the menus */
 .our-walks-main__inner-list-heading {
   font-size  : 2rem;
   font-weight: bolder;
 }
 
+/* This represents an individual menu item. The code below gives it a semi transparent white background */
 .our-walks-main__individual {
   list-style      : none;
   background-color: rgba(255, 255, 255, 0.6);
@@ -791,23 +813,50 @@ body {
 }
 
 
-.our-walks-main__go-back {
-  cursor    : pointer;
-  font-size : 2rem;
-  visibility: hidden;
+/* This is the right side of the main section of the page. It contains a photo for each city and an interactive map. 
+   They are aligned vertically with flexbox */
+.our-walks-main__right {
+  height        : 100%;
+  flex          : 0.6;
+  display       : flex;
+  flex-direction: column;
+  background    : #EDED1B;
+}
+
+/* This is where the photo for each city is displayed. This section makes up the top half of the right section */
+.our-walks-photos {
+  flex               : 1;
+  margin             : 1rem;
+  background         : url('https://scontent.ffjr1-1.fna.fbcdn.net/v/t1.0-9/s960x960/88133941_1520101454838251_1893504158565138432_o.jpg?_nc_cat=102&_nc_sid=dd9801&_nc_ohc=zVeHZ_weJgcAX86ItdH&_nc_ht=scontent.ffjr1-1.fna&_nc_tp=7&oh=2db618b45b745ddeeade12189042f458&oe=5F036646');
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+}
+
+
+/* This is the interactive map it takes up the bottom half of the right section*/
+#map {
+  flex: 1;
+}
+
+/* -------------Additional Utility Class----------------------- */
+
+.hidden {
+  display: none;
 }
 
 /* ------------------------------ Responsive Media Query -------------------------- */
 @media only screen and (max-width: 600px) {
+
+  /* Makes the padding around the edges of the screen smaller */
   body {
     padding: 0.5rem;
     margin : 0;
   }
 
-  .header-image {
-    background-position: left;
-  }
+  /* ------------------------ Navigation Bar ---------------------- */
 
+  /* This removes the circular borders of the navbar and decreases the font size of the text */
   .navbar {
     margin       : 0.5rem 0;
     font-size    : 0.8rem;
@@ -815,11 +864,12 @@ body {
 
   }
 
+  /* This makes it so the navbar menu items are stacked vertically on top of each other*/
   .navbar__links {
     flex-direction: column;
-    transition    : all ease 0.2s;
   }
 
+  /* This makes it so the navbar menu items are not circular */
   .navbar__link:first-child,
   .navbar__link:last-child {
     border-top-left-radius    : 0;
@@ -828,26 +878,36 @@ body {
     border-bottom-right-radius: 0;
   }
 
+  /* This makes it so the "upcoming events" menu item has a rectangular border */
+  .upcoming-events {
+    border-top-left-radius   : 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* This code (and the one below it) is to remove the double border effect */
   .navbar__link,
   .navbar__mobile-link {
     border-bottom: none;
   }
 
+  /* This code (and the one above it) is to remove the double border effect */
   .navbar__link:last-child {
     border-bottom: black 2px solid;
   }
 
+  /* This increases the size of the icons */
   .navbar__link i {
-    font-size   : 2rem;
-    justify-self: start;
+    font-size: 2rem;
   }
 
+  /* This makes the expand button visible on mobile */
   .navbar__expand {
     display        : flex;
     background     : white;
     justify-content: center;
   }
 
+  /* This styles the expand button icon */
   .navbar__expand i {
     color                  : yellow;
     background             : black;
@@ -858,89 +918,104 @@ body {
     border-top-right-radius: 0;
   }
 
-  .info__text {
-    visibility: visible;
-  }
-
-  .info-right__btns {
-    font-size: 1.5rem;
-  }
-
-  .info-right__btns i {
-    padding: 0.5rem 0.66rem;
-  }
-
-  .upcoming-events {
-    border-top-left-radius   : 0;
-    border-bottom-left-radius: 0;
-  }
-
+  /* This makes the "menu" navbar item visible on mobile */
   .navbar__mobile-link {
     display: block;
   }
 
+  /* This aligns the hamburger icon to the left */
   .hamburger-menu-icon {
     float: left;
 
   }
 
+  /* This is a utility class that is used to hide collapsed navbar menu items */
   .collapsed {
     display: none;
   }
 
+  /* This is a utility class used to give navbar menu items a bottom border */
   .bottom-border {
     border-bottom: black 2px solid;
   }
 
+  /* -------------------- Home Page ---------------- */
+
+  /* This makes the info section on the home page vertical and sets a height for it */
   .info {
     flex-direction: column;
     height        : 140vh;
   }
 
-  .nav-slide {
-    visibility: collapse;
-  }
-
+  /* This allocates 40% of the height to the icons, logo, and their descriptions */
   .info-left {
     flex: 0.4;
   }
 
+  /* This allocates 60% of the height to the carousel */
   .info-right {
     flex: 0.6;
   }
 
+  /* This makes the default text visible on mobile */
+  .info__text {
+    visibility: visible;
+  }
+
+  /* This decreases the size of the left and right buttons */
+  .info-right__btns {
+    font-size: 1.5rem;
+  }
+
+  /* This decreases the padding around the left and right buttons on mobile */
+  .info-right__btns i {
+    padding: 0.5rem 0.66rem;
+  }
+
+  /* This makes the padding and margin smaller on mobile */
   .newsletter-cta {
     padding: 0.5rem;
     margin : 0.5rem;
   }
 
+  /* This makes it so the form and button take up 100% of the width of the parent */
   .newsletter-cta__form {
     width: 100%;
   }
 
+  /* This decreases the padding of the email form and the button on mobile */
   .newsletter-cta__email,
   .newsletter-cta__btn--joined {
     padding: 0.2rem;
   }
 
+  /* This hides the summary paragraph on mobile as it looked a bit cluttered */
   .summary-paragraph {
     display: none;
   }
 
+  /* -------------------------- Upcoming Events Page -------------------- */
+
+  /* This decreases the font size of the text in the header on mobile */
   .events-header__text {
     font-size: 3.5rem;
   }
 
+  /* This makes the padding of the event container smaller on mobile */
   .events-container {
     padding: 2rem;
   }
 
+  /* -------------------------------- About us ------------------------------- */
+
+  /* This sets the height of the header of the about us section and makes it vertical so it looks good on mobile */
   .who-we-are-what-we-do {
     display       : flex;
     height        : 130vh;
     flex-direction: column;
   }
 
+  /* This changes the border radius and gradient so it matches with the who we are section on mobile */
   .what-we-do {
     flex                      : 1;
     border-radius             : 80px;
@@ -951,6 +1026,7 @@ body {
 
   }
 
+  /* This changes the border radius and gradient so it matches with the what we do section on mobile */
   .who-we-are {
     flex                   : 1;
     border-radius          : 80px;
@@ -961,8 +1037,8 @@ body {
 
   }
 
+  /* This aligns the organization member's profiles vertically so that they look good on mobile */
   .profile {
-
     flex-direction: column;
     align-items   : center;
     text-align    : center;
@@ -970,31 +1046,37 @@ body {
   }
 
 
-
+  /* Changed the padding of the images on mobile */
   .profile__image1,
   .profile__image2 {
     padding: 6rem;
   }
 
+  /* Makes it so that the text takes up 100% of the width of its parent element on obile */
   .profile__text {
-
     width: 100%;
   }
 
+  /* Gives the paragraph a smaller padding on mobile */
   .profile__paragraph {
     padding: 1rem;
   }
 
+  /* Gives the name of the group member a bottom margin */
   .profile__title {
     margin: 1rem;
   }
 
+  /* -------------------------------- Article 1 & 2 ----------------------------------- */
+
+  /* Aligns the title of the article and the author's profile vertically */
   .article-1-header,
   .article-2-header {
     flex-direction: column;
 
   }
 
+  /* Resizes and realigns the title so that it looks good on mobile */
   .article-1-header__title,
   .article-2-header__title {
     letter-spacing : 0.5rem;
@@ -1005,11 +1087,13 @@ body {
     justify-content: center;
   }
 
+
   .article-1-header__profile,
   .article-2-header__profile {
     flex: 1;
   }
 
+  /* Changes the font size and margin so that the article content looks better on mobile */
   .article__content {
     font-size  : 1rem;
     line-height: normal;
@@ -1017,19 +1101,57 @@ body {
 
   }
 
+  /* Decreases the padding of the article container on mobile */
   .article__container {
-    padding      : 1rem;
-    background   : #dfe6e9;
-    border-radius: 4rem;
+    padding: 1rem;
   }
 
+  /* This gives the article headings a smaller margin */
   .article__container h2 {
-    text-align: center;
-    margin    : 1rem;
+    margin: 1rem;
   }
 
+  /* This decreases the spacing between paragraphs on mobile */
   .article__container p {
     margin: 1rem;
+  }
+
+  /* ------------------------------- Our Walks Page ------------------------------ */
+
+
+  /* This aligns the main section vertically on mobile */
+  .our-walks-main {
+    flex-direction: column;
+  }
+
+  /* Decreases the font size of the title on mobile */
+  .our-walks-header__text--title {
+    font-size: 3rem;
+  }
+
+  /* Decreases the font size of the subtitle on mobile */
+  .our-walks-header__text--subtitle {
+    font-size: 1.3rem;
+  }
+
+  /* Decreases the font size of the menu headings */
+  .our-walks-main__inner-list-heading {
+    font-size: 1.2rem;
+  }
+
+  /* Decreases the padding of the menu on mobile */
+  .our-walks-main__left {
+    padding: 1rem;
+  }
+
+  /* Sets the heigght for the container of the photo and interactive map on mobile */
+  .our-walks-main__right {
+    height: 70vh;
+  }
+
+  /* Decreases the size of the text in the breadcrumbs */
+  .our-walks-main__breadcrumbs {
+    font-size: 1rem;
   }
 
 
