@@ -952,12 +952,14 @@ body {
 
   /* This allocates 40% of the height to the icons, logo, and their descriptions */
   .info-left {
-    flex: 0.4;
+    flex  : 0.4;
+    height: auto;
   }
 
   /* This allocates 60% of the height to the carousel */
   .info-right {
-    flex: 0.6;
+    flex  : 0.6;
+    height: auto;
   }
 
   /* This makes the default text visible on mobile */
