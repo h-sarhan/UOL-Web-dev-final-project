@@ -1,7 +1,7 @@
 // Helper function to display an event's information when hovering over it
 function displayInfo(card) {
   card.children[0].style.visibility = 'visible';
-  card.children[0].style.transform = 'translateY(-40px)';
+  card.children[0].style.transform = 'translateY(-30px)';
 }
 
 // Helper function to hide am event's information when the user is no longer hovering over it
@@ -83,10 +83,29 @@ for (var i = 0; i < eventCards.length; i++) {
   registrationForms[i] = registrationForm.cloneNode(true);
 }
 
+var focused = [];
+for (var i = 0; i < eventCards.length; i++) {
+  focused[i] = false;
+}
 // This loop cycles through the event cards and adds the appropriate background as well
 // as adding a 'mouseover' event listener to each card
 for (var i = 0; i < eventCards.length; i++) {
   backgroundWithoutOverlay(i);
+
+  eventCards[i].addEventListener('click', function () {
+    if (!eventCards[this].classList.contains('events-cards--joined') && !focused[i]) {
+      focused[i] = true;
+      backgroundWithOverlay(this);
+      displayInfo(eventCards[this]);
+    } else if (!eventCards[this].classList.contains('events-cards--joined') && focused[i]) {
+      focused[i] = false;
+      backgroundWithoutOverlay(this);
+      removeInfo(eventCards[this]);
+    }
+  }.bind(i));
+
+
+
   // This event listener will trigger when the user hovers over the card, and will display
   // a dimmed overlay along with information about the event and a join button
   eventCards[i].addEventListener(
@@ -96,7 +115,7 @@ for (var i = 0; i < eventCards.length; i++) {
         backgroundWithOverlay(this);
         displayInfo(eventCards[this]);
       }
-    }.bind(i),
+    }.bind(i)
   );
   // This event listener will trigger when the user is no longer hovering over the card, and will remove
   // the dimmed overlay as well as the information about the event and the join button
